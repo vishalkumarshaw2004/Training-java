@@ -24,7 +24,7 @@ public class PremiumCalculator {
 			double base=sc.nextDouble() ;
 			System.out.println("Enter Sum Assured");
 			double sum=sc.nextDouble() ;
-					HealthInsurance h = new HealthInsurance(name, age, base, sum);
+					HealthInsurance h = new HealthInsurance(name, age, base);
 					h.calculatePremium();
 			break;
 		case 2:

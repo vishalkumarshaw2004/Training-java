@@ -23,8 +23,12 @@ public static void main(String[] args) {
       s.deposit();
          break;
      case 2:
+    	 try {
     	 s.withdraw();
-
+    	 }
+    	 catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
          break;
      }
 }

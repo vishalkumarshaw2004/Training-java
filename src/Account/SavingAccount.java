@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SavingAccount extends Account {
 
-	int minbal=200;
+	int minbal=1000;
 
 	Scanner sc = new Scanner(System.in);
 
@@ -24,11 +24,12 @@ public class SavingAccount extends Account {
 	}
 
 	@Override
-	void withdraw() {
+	void withdraw() throws InsufficientBalanceException {
 		System.out.println("Enter the amount you want to withdraw");
 		int w=sc.nextInt();
-		  if (w <= minbal) {
-              System.out.println("Amount must be greater than 200.");
+	if	(balance - w < minbal) {
+			  throw new InsufficientBalanceException("minimum balance should be 1000");
+             
           } else if (w > balance) {
               System.out.println("Insufficient Balance.");
           } else {
