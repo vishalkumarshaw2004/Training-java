@@ -39,6 +39,7 @@ public class PolicyService {
 	        countMap.put(
 	            p.getPolicyType(),
 	            countMap.getOrDefault(p.getPolicyType(), 0) + 1
+	            
 	        );
 	    }
 
