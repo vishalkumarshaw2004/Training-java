@@ -1,0 +1,19 @@
+You are developing an Inventory Management System for an e-commerce warehouse.
+The warehouse has a limited stock of a product. Multiple customers are trying to
+purchase the product at the same time.
+Your task is to implement a multithreaded program that ensures:
+Stock never becomes negative.
+No overselling happens.
+Proper synchronization is maintained.
+
+Requirements
+============
+Initial stock = 10 units
+Create 5 customer threads
+Each customer tries to purchase a random quantity between 1 and 4.
+If enough stock is available:
+Deduct stock
+Print success message
+If stock is insufficient:
+Print failure message
+Final stock should be printed at the end.
